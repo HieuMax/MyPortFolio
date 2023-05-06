@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    /*/color: white;/*/
+}
+body {
+    color: white;
+    background: linear-gradient(to left, rgb(0, 0, 0) , #191970 50%, rgb(0, 0, 0) );
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: transparent;
+    /*border: 1px solid lightgray;*/
+    background: linear-gradient(rgba(255, 255, 255, 0.315), rgba(25, 25, 112, 0.523));
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.container{
+    background-color: #191970;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 2%;
+    box-shadow: 16px 16px 8px 0 lightgray;
+    color: white;
+}
+/*Light Mode*/
+.container.lightMode{
+    background-color: white;
+    color: #000;
+}
+header.lightMode{
+    color: black;
+    background: transparent;
+}
+.aLightMode_menu.lightMode{
+    font-size: 20px !important;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: black;
+}
+
+/*Light Mode*/
+
+
+.menu {
+    display: flex;
+    margin-top: 1em;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+}
+.menu ul {
+    font-size: 16px;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul a{
+    font-size: 20px !important;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+
+}
+
+.menu ul a:hover {
+    transition: all ease-in 0.3s;
+    background-color: rgb(211, 211, 211);
+    box-shadow: 4px 4px 1px 0.2px #000;
+}
+
+.menu ul a:hover .changeColor {
+    color: midnightblue;
+    transition: all ease-in-out 0.3s;
+}
+.menu ul a:hover li {
+    color: #191970;
+    transition: all ease-in-out 0.3s;
+}
+
+main{
+    width: 96%;
+    margin: auto;
+    margin-top: 1em;
+    height: auto;
+}
+
+.infor {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+    grid-template-areas: "infor pic";
+    color: midnightblue;
+    justify-content: center;
+    align-items: center;
+}
+.paraphInfor{
+    grid-area: "infor";
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    box-shadow: 8px 8px 16px 0px black;
+    padding: 15px;
+    background-color: white;
+}
+.paraphInfor h2{
+    color: black;
+}
+#span-about-me li, a,i,b,strong{
+    color: black;
+}
+#span-about-me{
+    width: 100%;
+    line-height: 2em;
+    font-size: 20px;
+    color: midnightblue;
+}
+.infor img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+
+.selectedBorder{
+    background-color: rgb(211, 211, 211);
+    box-shadow: 4px 4px 1px 0.2px #000;
+    color: midnightblue;
+
+}
+.colorMidnightblue{
+    color: midnightblue;
+}
+#fullStackDev:hover{
+    color: rgb(0, 0, 255);
+    transition: all 0.3s;
+}
+
+footer{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    bottom: 2%;
+    padding: 2%;
+}
+
+.containerSkill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hiddenStar{
+    margin-left: 2%;
+    display: none;
+}
+.clickSkill{
+    cursor: pointer;
+}
+
+.hiddenStar.showHiddenStar{
+    display: block;
+}
+
+.container-skill-showAll{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container-skill-showAll h3 {
+    color: black;
+    cursor: pointer;
+}
+
+/*Light - Dark Toggle*/
+.lightcontrol{
+    margin-left: -90%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.beautifulPlaces{
+    margin: 2em auto;
+    text-align: center;
+    width: 100%;
+}
+
+.beautifulPlaces img {
+    width: 70%;
+    height: auto;
+}
