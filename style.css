@@ -145,8 +145,8 @@ main{
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: auto;
 }
 
 .selectedBorder{
@@ -270,10 +270,13 @@ footer{
 .container_photo{
     background-image: url('Images/Pic1.jpg');
     display: flex;
+    width: 100%;
     height: 700px;
-    background-size:contain;
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
 }
 .child_container_photo{
     display: flex;
@@ -284,11 +287,21 @@ footer{
 
 
 .framePhoto.opacity{
+    transition: all 0.5s ease-in-out;
     opacity: 1;
 }
 .framePhoto.unopacity{
     opacity: 0.5;
 }
 .child1{
+    transition: all 0.5s ease-in-out;
+
     opacity: 1;
 }
+
+/*Drop down*/
+.dropdown{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 8px 8px 16px 0px black;
+}
+
