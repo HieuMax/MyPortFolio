@@ -62,32 +62,32 @@
                 <img src="Images/avatar.jpg" alt="" > 
             </div>
         </main>
-        <script src="main.js"></script>
 
 
         <div class="beautifulPlaces">
             <h2>There are some beautiful Photo</h2>
             <div class="box_photo">
                 <div class="button prev">
-                    <i class="fa-solid fa-circle-chevron-left"></i>
+                    <i class="fa-solid fa-circle-chevron-left" id="prev_button"></i>
                 </div>
                 <div class="container_photo">
-                    <img src="Images/Pic1.jpg" alt="">
-                    <img src="Images/Pic2.jpg" alt="">
-                    <div class="framePhoto child1" style="background-image: url(Images/Pic1.jpg); background-repeat: no-repeat; background-position: center;"></div>
-                    <div class="framePhoto child2" style="background-image: url(Images/Pic2.jpg); background-repeat: no-repeat; background-position: center;"></div>
-                    <div class="framePhoto child3" style="background-image: url(Images/Pic3.jpg); background-repeat: no-repeat; background-position: center;"></div>
-                    <div class="framePhoto child4" style="background-image: url(Images/Pic4.jpg); background-repeat: no-repeat; background-position: center;"></div>
-                    <div class="framePhoto child5" style="background-image: url(Images/Pic5.jpg); background-repeat: no-repeat; background-position: center;"></div>
-                    <div class="framePhoto child6" style="background-image: url(Images/Pic6.jpg); background-repeat: no-repeat; background-position: center;"></div>
-
+                    <div class="child_container_photo">
+                        <div class="framePhoto child1" style="background-image: url(Images/Pic1.jpg); background-repeat: no-repeat; background-position: center;"></div>
+                        <div class="framePhoto child2" style="background-image: url(Images/Pic2.jpg); background-repeat: no-repeat; background-position: center;"></div>
+                        <div class="framePhoto child3" style="background-image: url(Images/Pic3.png); background-repeat: no-repeat; background-position: center;"></div>
+                        <div class="framePhoto child4" style="background-image: url(Images/Pic4.png); background-repeat: no-repeat; background-position: center;"></div>
+                        <div class="framePhoto child5" style="background-image: url(Images/Pic5.png); background-repeat: no-repeat; background-position: center;"></div>
+                        <div class="framePhoto child6" style="background-image: url(Images/Pic6.png); background-repeat: no-repeat; background-position: center;"></div>
+                    </div>
                 </div>
-                <div class="button prev">
-                    <i class="fa-solid fa-circle-chevron-right"></i>
+                <div class="button next">
+                    <i class="fa-solid fa-circle-chevron-right" id="next_button"></i>
                 </div>
             </div>
             
         </div>
+        <script src="main.js"></script>
+
         <!--
         <div class="dropdown" data-bs-theme="light">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
