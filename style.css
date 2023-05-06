@@ -222,3 +222,28 @@ footer{
     width: 70%;
     height: auto;
 }
+
+/*Button Prev - Next*/
+.box_photo{
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-areas: "prev pic next";
+    padding: 0 2em;
+}
+
+.button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev{
+    grid-area: "prev";
+    zoom: 5;
+
+}
+.framePhoto{
+    height: 100%;
+    width: 100%;
+}
